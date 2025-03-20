@@ -1,0 +1,218 @@
+body
+{
+	margin-top: 1%;
+	font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+    background-color: #fbf3ea;
+    background-image: url(1.jpg), url(3.jpg), url(2.jpg);
+    background-size: 33% 100%, 33% 100%, 33% 100%;
+    background-position: left center, center center, right center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+#one
+{
+    background-color: white;
+	margin-left: 20%;
+	margin-bottom: 5%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+.oneone
+{
+	float: left;
+}
+
+.col-md-1
+{
+	padding-left: 0;
+}
+
+.twotwo
+{
+	float: right;
+}
+
+.one
+{
+	font-style: italic;
+	font-size: 13px;
+}
+
+#idk
+{
+	text-align: center;
+}
+
+.link
+{
+	text-indent: 16%;
+}
+
+#svg
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.bold
+{
+	font-size: 18px;
+	font-weight: 600;
+	font-style: oblique;
+}
+
+#two
+{
+    background-color: white;
+	margin-bottom: 3%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+#three
+{
+    background-color: white;
+	margin-left: 10%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+#four
+{
+    background-color: white;
+	padding-top: .5%;
+	padding-bottom: .5%;
+	border: 1px solid black;
+}
+
+#five
+{
+    background-color: white;
+	margin-right: 10%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+#six
+{
+    background-color: white;
+	margin-top: 4%;
+	margin-left: 20%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+#seven
+{
+    background-color: white;
+	margin-top: 4%;
+	margin-right: 15%;
+	padding: 2%;
+	padding-bottom: 1%;
+	border: 1px solid black;
+}
+
+.circle
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes example
+{
+    0%   {background-color: white; left:-5px; top:90px;}
+    50%  {background-color: blue; left:109px; top:90px;}
+    100% {background-color: white; left:109px; top:235px;}
+}
+
+.circle4
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: exampleeee; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes exampleeee
+{
+    0%   {background-color: white; left:211px; top:225px;}
+    50%  {background-color: blue; left:211px; top:79px;}
+    60%  {background-color: blue;}
+    100% {background-color: white; left:330px; top:79px;}
+}
+
+.circle2
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: examplee; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes examplee
+{
+    0%   {background-color: white; left:185px; top:95px;}
+    75%  {background-color: blue;}
+    100% {background-color: white; left:0px; top:95px;}
+}
+
+.circle3
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: exampleee; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes exampleee
+{
+    0%   {background-color: white; left:-5px; top:95px;}
+    75%  {background-color: blue;}
+    100% {background-color: white; left:180px; top:95px;}
+}
+
+.circle5
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    -webkit-animation-name: exampleeeee; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 10s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes exampleeeee
+{
+    0%   {background-color: white; left:-7px; top:140px;}
+    20%  {background-color: blue; left:109px; top:140px;}
+    40%  {background-color: white; left:109px; top:0px;}
+    60%  {background-color: white; left:218px; top:0px;}
+    80%  {background-color: blue; left:218px; top:140px;}
+    100%  {background-color: white; left:330px; top:140px;}
+}
