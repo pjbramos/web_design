@@ -8,4 +8,4 @@ I have started refreshing my knowledge regarding programming languages and am cu
 5. CSS Box Model using [Rothko Painting](https://github.com/pjbramos/web_design/blob/main/HTML%2C%20CSS/css%20box%20model%20styles.css) from *freeCodeCamp*
 6. CSS Flexbox using [Photo Gallery](https://github.com/pjbramos/web_design/blob/main/HTML%2C%20CSS/css%20flexbox%20styles.css) from *freeCodeCamp*
 7. Introductory JavaScript using [Pyramid Generator](https://github.com/pjbramos/web_design/blob/main/JS/pyramid.js) from *freeCodeCamp*
-8. [Quiz Exercise](https://github.com/pjbramos/web_design/blob/main/HTML%2C%20CSS/Quiz/alt1.1.html) using HTML, CSS, and JavaScript
+8. [Quiz Exercise](https://github.com/pjbramos/web_design/tree/main/HTML%2C%20CSS/Quiz) using HTML, CSS, and JavaScript
