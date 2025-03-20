@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quishh</title>
+	<link rel="icon" href="help.png" type="image/jpg">
+	<link rel="stylesheet" type="text/css" href="pfft.css">
+	<script type="text/javascript">
+		var questions = [
+						"What is the color of the sun?",
+						"What wave in the electro-magnetic spectrum has the longest wavelength?",
+						"A cat, a flask of poison and a radioactive source are placed on the box. In this state, the cat is simultaneously alive and dead. Which experiment is this?",
+						"Longest and strongest bone of the body.",
+						"Main character for the Catcher in the Rye.",
+						"MVP for the 2014-15 NBA Season",
+						"The date of the bombing of the World Trade Center wherein terrorist group Al-Qaeda hijacked four airplanes and crashed a few of them into US buildings.",
+						"Equivalent to 2.718281828459045.",
+						"Which fruit has the scientific name of \"Ananas comosus\"?",
+						"Which bomber used invictus as his final statement?",
+						"A top 3 e-sports clan founded in youtube.",
+						"A statistical test which is also known as the analysis of variance.",
+						"An american rapper whose debut album is \"Show and Prove\" which is released in 2006.",
+						"The ninth circle of hell according to \"Dante's Inferno\".",
+						"All giant pandas are owned by what country?",
+						"Which SNSD member has the most tanned leg as of today?",
+						"Which condition is referred to as \"the fear of falling in love.\"",
+						"The 3 small bones of the middle ear are the malleus, _ _ _ _ _ and the stapes.",
+						"Primitive computers were referred to as what?",
+						"The magnitude of the gravity of the earth."
+					];
+		var choices = [
+						["White","Black","Asian Yellow","Bordy Black"],
+						["Radio", "Micro", "Gamma", "Nano"],
+						["The Khali Pussy", "Schrodinger\'s Cat", "Neko Atsume", "Quantum Cat"],
+						["Humerus", "Stirrup", "Femur", "Patella"],
+						["Holden Caulfield", "Evander Holyfield", "Mike Tyrus", "Jane Gallagher"],
+						["Stephen Curry", "Russell Westbrook", "Stephen Galamay", "Lebron James"],
+						["April 20, 2001", "September 11, 2001", "November 22, 2000", "June 9, 2000"],
+						["theta", "pi", "Avogadro's Constant", "Euler's Number"],
+						["Banana", "Rannah", "Pineapple", "Pinkapple"],
+						["JaVale McGee", "Timothy McVeigh", "Hakeem Olajuwon", "Mohammed Ali"],
+						["faZe Clan", "dA Hood", "John Thena", "Anonymous"],
+						["Hypernova", "Hechanova", "Anova", "Supernova"],
+						["Wiz Khalifa", "Mia Khalifa", "Whiz Kulafu", "Mien Kalabo"],
+						["Violence", "Lust", "Malbolgia", "Cocytus"],
+						["Germany", "North Korea", "China", "Japan"],
+						["Yuri", "Yaoi", "Tiffany Hwang", "Sooyoung"],
+						["Hemophobia", "Homophobia", "Philophobia", "Tyrophobia"],
+						["Mucus", "Incus", "Incas", "Aztec"],
+						["Turning Machines", "Touring Machines", "Turing Machines", "Aliens"],
+						["9.11", "9.6", "6.9", "9.8"]
+					];
+		var answers = [
+					"White",
+					"Gamma",
+					"Schrodinger\'s Cat",
+					"Femur",
+					"Holden Caulfield",
+					"Stephen Curry",
+					"September 11, 2001",
+					"Euler's Number",
+					"Pineapple",
+					"Timothy McVeigh",
+					"faZe Clan",
+					"Anova",
+					"Wiz Khalifa",
+					"Cocytus",
+					"China",
+					"Yuri",
+					"Philophobia",
+					"Incus",
+					"Turing Machines",
+					"9.8"
+				];
+		var live = [
+				"<img src=\"images/laifu-true.png\">",
+				"<img src=\"images/laifu-true.png\">",
+				"<img src=\"images/laifu-true.png\">"
+				];
+		var nos = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+		var lives = 3, points = 0;
+
+		function check(form,x)
+		{
+			if (form.choice.value == answers[x])
+			{
+				points+=100;
+				document.getElementById("score").innerHTML = "<br><br>" + "Score: " + points;
+				document.getElementById("lives").innerHTML = live;
+				alert("Correct! You have been awarded with 100 points.");
+			}
+			else
+			{
+				live.pop();
+				document.getElementById("score").innerHTML = "<br><br>" + "Score: " + points;
+				document.getElementById("lives").innerHTML = live;
+				lives--;
+				alert("Wrong! Your number of lives has been reduced by 1.");
+			}
+			ask();
+		}
+
+		function ask()
+		{
+			if (lives>0)
+			{
+				document.getElementById("score").innerHTML = "<br><br>" + "Score: " + points;
+				document.getElementById("lives").innerHTML = live;
+				var x;
+				do
+				{
+					var x = Math.floor(Math.random() * 20);
+				} while(x>20);
+			
+				var str = '';
+				document.getElementById("question").innerHTML = "<br><br><br><br><br><br><br>" + questions[x] + "<br><br>";
+				for (var i = 0; i <= 3; i++)
+				{
+					if (i < 2)
+					{
+						str += "<input type=\"radio\" name =\"choice\" value=\"" + choices[x][i] + "\">" + choices[x][i];
+					}
+					else if (i == 2)
+					{
+						str+= "<br>" + "<input type=\"radio\" name =\"choice\" value=\"" + choices[x][i] + "\">" + choices[x][i];
+					}
+					else
+					{
+						str+= "<input type=\"radio\" name =\"choice\" value=\"" + choices[x][i] + "\">" + choices[x][i];
+					}
+				}
+				str+= "<br><br>" + "<input type=\"button\" onclick=\"check(this.form," + x + ")\" value=\"Submit\">";
+				document.getElementById("choices").innerHTML = str;
+			}
+			else if (lives == 0)
+			{
+				var aah = confirm("Game Over! Your score is " + points + ". Would you like to play again?");
+				if (aah)
+				{
+					points = 0;
+					lives = 3;
+					live = [
+						"<img src=\"images/laifu-true.png\">",
+						"<img src=\"images/laifu-true.png\">",
+						"<img src=\"images/laifu-true.png\">"
+							];
+					ask();
+				}
+				else
+					document.write("Sayonara!");
+			}
+		}
+	</script>
+</head>
+<body onload="ask()">
+	<div id="score"></div>
+	<div id="lives"></div>
+	<div id="question"></div>
+	<form method="GET" id="choices"></form>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

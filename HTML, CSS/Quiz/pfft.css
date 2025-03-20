@@ -1,0 +1,44 @@
+html
+{
+	background-image: url(running6.gif);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	height: 100%;
+}
+
+body
+{
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 10%;
+	width: 60%;
+	font-size: 130%;
+	background-color: white;
+}
+
+input[type="radio"]
+{
+	margin-left: 10%;
+}
+
+#question
+{
+	text-align: center;
+	margin-left: 5%;
+}
+
+#score
+{
+	float: left;
+}
+
+#choices
+{
+	text-align: center;
+}
+
+#lives
+{
+	float: right;
+}
